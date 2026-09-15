@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">다시, 한 걸음</title>
+  <defs>
+    <linearGradient id="step-blue" x1="0" y1="0.7" x2="1" y2="0.28">
+      <stop stop-color="#81CDFF"/>
+      <stop offset="1" stop-color="#0056FC"/>
+    </linearGradient>
+    <linearGradient id="head-blue" x1="0" y1="0.65" x2="1" y2="0.33">
+      <stop stop-color="#81CDFF"/>
+      <stop offset="1" stop-color="#0056FC"/>
+    </linearGradient>
+  </defs>
+  <path d="M87 165H129V170C129 202 102 228 70 228H28V223C28 191 55 165 87 165Z" fill="url(#step-blue)"/>
+  <path d="M181 102H223V107C223 139 196 165 164 165H122V160C122 128 149 102 181 102Z" fill="url(#step-blue)"/>
+  <circle cx="203" cy="52" r="24" fill="url(#head-blue)"/>
+</svg>

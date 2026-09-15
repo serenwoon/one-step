@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "preview",
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 300,
+      "excludeFiles": "{deploy/**,references/**,vercel_dist/**,.env*,.git/**,**/__pycache__/**,**/*.log,**/.DS_Store,one_step_e2e*.py}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/ask",
+      "destination": "/api/ask"
+    },
+    {
+      "source": "/health",
+      "destination": "/api/health"
+    }
+  ]
+}

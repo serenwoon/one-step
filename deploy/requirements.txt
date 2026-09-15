@@ -1,0 +1,2 @@
+# Hermes는 Dockerfile에서 고정 커밋의 소스를 editable 방식으로 설치한다.
+mcp==2.0.0

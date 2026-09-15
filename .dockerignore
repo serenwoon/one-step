@@ -1,0 +1,16 @@
+# 필요한 실행 파일만 빌드 문맥에 포함한다. 키와 실행 기록은 기본 제외한다.
+**
+!Dockerfile
+!.dockerignore
+!bridge_server.py
+!policy_mcp_server.py
+!policy_fetch.py
+!preview/
+!preview/index.html
+!deploy/
+!deploy/requirements.txt
+!deploy/run_bridge.sh
+!deploy/profile-template/
+!deploy/profile-template/config.yaml
+!deploy/init_service_profile.py
+!deploy/check_health_port.py

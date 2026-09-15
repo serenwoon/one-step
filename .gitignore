@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+bridge.log
+.DS_Store
+__pycache__/
+
+# 서비스 실행 중 생성되는 프로필과 기록은 배포 소스로 올리지 않음
+/deploy/ServiceProfile/
+.vercel
+.env*

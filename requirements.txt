@@ -1,0 +1,2 @@
+# Vercel API는 Python 표준 라이브러리만 사용한다.
+# Hermes 로컬/컨테이너 의존성은 deploy/requirements.txt에서 관리한다.

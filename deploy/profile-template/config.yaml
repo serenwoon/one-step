@@ -1,0 +1,45 @@
+# 서비스 전용 프로필의 배포 템플릿 (키·대화기록 없음)
+# /opt/one-step은 서버의 실제 프로젝트 설치 경로에 맞춰 변경한다.
+# 정책 MCP include 설정만으로 전체 도구 제한이 완료된 것은 아니다.
+model:
+  default: solar-pro4
+  provider: upstage
+  base_url: https://api.upstage.ai/v1
+
+database:
+  journal_mode: wal
+
+agent:
+  max_turns: 500
+  verbose: false
+  reasoning_effort: medium
+
+terminal:
+  backend: local
+  cwd: .
+  timeout: 180
+  home_mode: auto
+
+mcp_servers:
+  one-step-policy:
+    command: python3
+    args:
+      - policy_mcp_server.py
+    cwd: /opt/one-step
+    timeout: 120
+    connect_timeout: 60
+    tools:
+      include:
+        - gov24_search
+        - on_youth_search
+      resources: false
+      prompts: false
+
+compression:
+  enabled: false
+
+memory:
+  memory_enabled: false
+  user_profile_enabled: false
+
+_config_version: 42
